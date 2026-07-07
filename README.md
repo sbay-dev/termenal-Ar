@@ -1,6 +1,7 @@
 ![terminal-logos](https://github.com/microsoft/terminal/assets/91625426/333ddc76-8ab2-4eb4-a8c0-4d7b953b1179)
 
-[![Terminal Build Status](https://dev.azure.com/shine-oss/terminal/_apis/build/status%2FTerminal%20CI?branchName=main)](https://dev.azure.com/shine-oss/terminal/_build/latest?definitionId=1&branchName=main)
+[![Latest release](https://img.shields.io/github/v/release/sbay-dev/termenal-Ar?label=Arabic%20RTL%20release)](https://github.com/sbay-dev/termenal-Ar/releases/latest)
+[![Community contributions welcome](https://img.shields.io/badge/community-contributions%20welcome-brightgreen)](https://github.com/sbay-dev/termenal-Ar/issues)
 
 # التيرمينال العربي / Arabic RTL Terminal
 
