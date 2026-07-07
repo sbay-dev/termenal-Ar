@@ -2,6 +2,48 @@
 
 [![Terminal Build Status](https://dev.azure.com/shine-oss/terminal/_apis/build/status%2FTerminal%20CI?branchName=main)](https://dev.azure.com/shine-oss/terminal/_build/latest?definitionId=1&branchName=main)
 
+# التيرمينال العربي / Arabic RTL Terminal
+
+هذه النسخة من Windows Terminal مخصصة لدعم العربية واتجاه النص من اليمين إلى اليسار **RTL** داخل سطر الأوامر. الهدف هو توفير تجربة عملية للمستخدم العربي عند كتابة وقراءة النصوص العربية، مع تحسين ترتيب النص، التفاعل مع المؤشر، والتعامل مع جلسات العمل المستمرة.
+
+نرحب بمساهمات المجتمع لتطوير هذه النسخة وتحسين دعم العربية واللغات التي تستخدم RTL. يمكن فتح issues أو إرسال pull requests للأفكار، التجارب، التصحيحات، واختبارات الحالات الواقعية.
+
+## تحميل وتثبيت نسخة Release
+
+يمكن لأي عضو في الفريق تحميل نسخة جاهزة من صفحة الإصدارات:
+
+**https://github.com/sbay-dev/termenal-Ar/releases/latest**
+
+### التثبيت السريع من PowerShell
+
+افتح PowerShell كمسؤول ثم نفذ:
+
+```powershell
+iwr https://raw.githubusercontent.com/sbay-dev/termenal-Ar/main/scripts/Install-ArabicTerminalRelease.ps1 -OutFile Install-ArabicTerminalRelease.ps1
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+.\Install-ArabicTerminalRelease.ps1
+```
+
+### التثبيت بعد تحميل ZIP يدويًا
+
+1. حمل ملف `WindowsTerminalDev-ArabicRTL-*-x64.zip` من صفحة الإصدارات.
+2. فك الضغط.
+3. افتح PowerShell كمسؤول داخل المجلد المستخرج.
+4. نفذ:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
+.\scripts\Install-LocalArabicTerminalPackage.ps1 -PackageRoot .
+```
+
+إذا كان السكربت غير موجود داخل ZIP القديم، يمكن استخدام أمر Windows المباشر من داخل المجلد المستخرج:
+
+```powershell
+Add-AppxPackage -Path .\CascadiaPackage_0.0.1.22_x64.msix -DependencyPath .\Dependencies\x64\Microsoft.UI.Xaml.2.8.appx -ForceApplicationShutdown
+```
+
+---
+
 # Welcome to the Windows Terminal, Console and Command-Line repo
 
 <details>
